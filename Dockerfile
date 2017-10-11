@@ -4,7 +4,7 @@
 FROM golang:1.9-alpine as builder
 
 ARG version="0.10.10"
-ARG plugins="git"
+ARG plugins="git,webdav,filemanager"
 
 RUN apk add --no-cache curl git
 

@@ -1,10 +1,10 @@
 #
 # Builder
 #
-FROM golang:1.9.1-alpine as builder
+FROM golang:1.9.2-alpine as builder
 
 ARG version="0.10.10"
-ARG plugins="git,webdav,filemanager"
+ARG plugins="git,webdav,filemanager,forwardproxy,jwt,login"
 
 RUN apk add --no-cache curl git
 
